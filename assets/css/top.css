@@ -1,0 +1,141 @@
+A {
+COLOR: #3354aa; TEXT-DECORATION: none;BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; OUTLINE-style: none; OUTLINE-COLOR: invert; PADDING-LEFT: 0px; OUTLINE-WIDTH: 0px; PADDING-RIGHT: 0px; BACKGROUND: none transparent scroll repeat 0% 0%; FONT-SIZE: 100%; VERTICAL-ALIGN: baseline; BORDER-TOP: 0px; BORDER-RIGHT: 0px; PADDING-TOP: 0px
+}
+A:hover {
+BORDER-BOTTOM: medium none; COLOR: #444
+}
+.back-to {
+Z-INDEX: 999; POSITION: fixed; WIDTH: 110px; BOTTOM: 35px; OVERFLOW: hidden; RIGHT: 10px
+}
+.back-to .back-top {
+TEXT-INDENT: -9999em; OUTLINE-style: none; OUTLINE-COLOR: invert; OUTLINE-WIDTH: 0px; WIDTH: 50px; DISPLAY: block; BACKGROUND: url(http://www.ccvita.com/usr/themes/ccvita/images/back-top.png) no-repeat 0px 0px; FLOAT: right; HEIGHT: 50px; MARGIN-LEFT: 10px
+}
+.back-to .back-top:hover {
+BACKGROUND-POSITION: -50px 0px
+}
+#flickrList li {
+	list-style: none;
+	padding: 0;
+	display: inline;
+	margin-right: 8px;
+	margin-bottom: 8px;
+	text-align: center
+}
+footer p {
+	text-shadow: 0 1px 0 #fff;
+	color: #555;
+}
+footer p a{
+	color: #0069D6;
+}
+.box {
+	background-color: #fff;
+	padding: 10px;
+	margin: 20px -20px 10px -20px;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	-webkit-box-shadow: 0 0px 2px rgba(0,0,0,0.05);
+	-moz-box-shadow: 0 0px 2px rgba(0,0,0,0.1);
+	box-shadow: 0 0px 2px rgba(0,0,0,0.05)
+}
+
+.box p.title {
+	font-size: 12px;
+	margin: 0 -10px;
+	padding: 0 10px;
+	margin-bottom: 8px;
+	color: #999;
+	line-height: 100%;
+	border-bottom: 1px solid #ddd;
+	padding-bottom: 8px
+}
+
+#hot_locations p{
+	font-size: 12px;
+	color: #999;
+	line-height: 100%;
+	text-align: left;
+	border-bottom: 1px solid #DDD;
+	margin: 0 -10px;
+	padding: 0 10px 10px 10px
+}
+
+#hot_locations ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	text-align: left
+}
+
+#hot_locations li {
+	margin: 0;
+	padding: 0;
+	display: inline
+}
+
+#hot_locations li a {
+	margin-right: 10px;
+	margin-top: 10px;
+	display: inline-block;
+	color: #555;
+	text-shadow: 0 1px 0 #fff
+}
+
+/*  顶部收藏css */
+#toptip {
+	background-color: #e5e5e5;
+	padding: 4px 16px;
+	*padding: 6px 16px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-o-border-radius: 3px;
+	border-radius: 3px;
+	position: absolute;
+	top: 8px;
+	left: 50%;
+	z-index: 99999;
+}
+
+#toptip .icon {
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+	*font-size: 1px;
+}
+
+#toptip strong {
+	font-weight: bold;
+}
+
+#toptip .icon-headset {
+	background: url(//mu8.bdstatic.com/player/t/i/szKNXr2y.png) -2px -98px no-repeat scroll;
+	width: 12px;
+	height: 10px;
+	margin-right: 8px;
+}
+
+#toptip .icon-close {
+	background: url(//mu8.bdstatic.com/player/t/i/gZ6ci1tf.png) -204px -672px no-repeat scroll;
+	width: 11px;
+	height: 11px;
+}
+
+#toptip .icon-close:hover {
+	background: url(//mu8.bdstatic.com/player/t/i/szKNXr2y.png) -24px -192px no-repeat scroll;
+}
+
+/* 博客宠物 */
+.spig {display:block;width:150px;height:190px;position:absolute;top: -200px;left: 160px;z-index:9999;}
+#message{color :#191919;border: 1px solid #c4c4c4;background:#ddd;-moz-border-radius:5px;-webkit-border-radius:5px;border-radius:5px;min-height:1em;padding:5px;top:-30px;position:absolute;text-align:center;width:auto !important;z-index:10000;-moz-box-shadow:0 0 15px #eeeeee;-webkit-box-shadow:0 0 15px #eeeeee;border-color:#eeeeee;box-shadow:0 0 15px #eeeeee;outline:none;}
+.mumu{width:150px;height:190px;cursor: move;background:url(../img/spig.png) no-repeat;}
+/*页面倾斜
+body {
+	transform: rotate(-8deg);
+	-moz-transform: rotate(-8deg);
+	-webkit-transform: rotate(-8deg);
+	-o-transform: rotate(-8deg);
+}*/
+/*博客前面的虚拟加载进度*/
+#topbarloading{background-image:url("https://zlz.im/wp-content/themes/dot-b/images/all.png")}
+#topbarloading{background-position:0 -632px; height:4px; font-size:0; width:20%; background-color:#F1F1F1}

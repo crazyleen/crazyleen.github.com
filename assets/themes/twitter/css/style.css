@@ -1,0 +1,260 @@
+/* Override some defaults */
+html, body {
+  /*background-color: #eee;*/
+  padding-top:20px; padding-bottom:10px;
+  background: #eee url(http://l.ruby-china.org/assets/bg-76c68310e8b3838ef3541e1fa6a53c8d.png) bottom left repeat
+}
+.navbar {
+  margin-bottom: 0;
+}
+.container > footer {
+  margin-top: 20px;
+}
+.container > footer p {
+  text-align: center; /* center align it with the container */
+}
+h1,h2,h3,h4,h5,h6 {
+font-family:Microsoft YaHei,tahoma, serif;
+}
+/* The white background content wrapper */
+.content {
+  background-color: #fff;
+  padding: 20px;
+  margin: 0 -20px; /* negative indent the amount of the padding to maintain the grid system */
+  -webkit-border-radius: 0 0 6px 6px;
+     -moz-border-radius: 0 0 6px 6px;
+          border-radius: 0 0 6px 6px;
+  -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.15);
+     -moz-box-shadow: 0 1px 2px rgba(0,0,0,.15);
+          box-shadow: 0 1px 2px rgba(0,0,0,.15);
+}
+.span8 > p {
+font-family: Verdana, sans-serif, 宋体;
+line-height:155%;
+font-size:15px;
+}
+/* Page header tweaks */
+.page-header {
+  background-color: #f5f5f5;
+  padding: 20px 20px 10px;
+  margin: -20px -20px 20px;
+}
+
+.topbar .btn {
+  border: 0;
+}
+
+
+/* tag_box ======================================================== */
+
+.tag_box {
+	list-style:none;
+	margin:0;
+	padding:5px 0 ;
+	overflow:hidden;
+}
+.tag_box li {
+	line-height:28px;
+}
+.tag_box.inline li {
+	float:left;
+}
+.tag_box a {
+	padding: 3px 6px;
+	margin: 2px;
+	background: #eee;
+	color:#005F6B;
+	border-radius: 3px;
+	text-decoration:none;
+}
+.tag_box a span{
+	vertical-align:super;
+	font-size:0.8em;
+}
+.tag_box a:link {/* 默认时 */
+	background:#999;
+	color:#FFF;
+}
+.tag_box a:visited {/* 点过后 */
+	background:#999;
+	color:#FFF;
+}
+.tag_box a:hover {/* 经过时 */
+	background:#F95B1F;
+	color:#FFF;
+}
+.tag_box a.active {
+	background:#57A957;
+	border:1px solid #4C964D;
+	color:#FFF;
+}
+/**************目录导航**************/
+#menuIndex {position:fixed;top:130px;right:5px;width:200px;overflow:auto}
+#menuIndex a {display:block;color:#000;}
+#menuIndex a:hover {text-decoration:none;}
+#menuIndex ul li{font-size:16px;margin-bottom:5px;word-wrap:break-word;}
+#menuIndex ul li.on{background-color:#66CCFF}
+#menuIndex li.h1{font-size:18px;font-weight:normal;}
+#menuIndex li.h3{padding-left:19px;}
+/* 去掉列表前的标识, li 会继承 */
+ul {list-style:none;}
+
+pre code, p code {
+	padding:0 1px;
+	font-size:0.9em;
+	line-height:1.5em; 
+    color: #000ABC;
+    -webkit-transition: all 0.45s linear;
+    -moz-transition: all 0.45s linear;
+    font-family:'Bitstream Vera Sans Mono', 'DejaVu Sans Mono', 'Monaco', Courier, monospace !important
+}
+
+/*分享设置*/
+.social-share-button-baidu {
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	background: url("http://l.ruby-china.org/assets/sprites/social-share-button-ae547dcfa2c720fa6fbae9ba7897b23b.png") 0px 0px no-repeat
+}
+
+.social-share-button-delicious {
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	background: url("http://l.ruby-china.org/assets/sprites/social-share-button-ae547dcfa2c720fa6fbae9ba7897b23b.png") -16px 0px no-repeat
+}
+
+.social-share-button-douban {
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	background: url("http://l.ruby-china.org/assets/sprites/social-share-button-ae547dcfa2c720fa6fbae9ba7897b23b.png") 0px -16px no-repeat
+}
+
+.social-share-button-email {
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	background: url("http://l.ruby-china.org/assets/sprites/social-share-button-ae547dcfa2c720fa6fbae9ba7897b23b.png") -16px -16px no-repeat
+}
+
+.social-share-button-facebook {
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	background: url("http://l.ruby-china.org/assets/sprites/social-share-button-ae547dcfa2c720fa6fbae9ba7897b23b.png") -32px 0px no-repeat
+}
+
+.social-share-button-flickr {
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	background: url("http://l.ruby-china.org/assets/sprites/social-share-button-ae547dcfa2c720fa6fbae9ba7897b23b.png") -32px -16px no-repeat
+}
+
+.social-share-button-google {
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	background: url("http://l.ruby-china.org/assets/sprites/social-share-button-ae547dcfa2c720fa6fbae9ba7897b23b.png") 0px -32px no-repeat
+}
+
+.social-share-button-google_plus {
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	background: url("http://l.ruby-china.org/assets/sprites/social-share-button-ae547dcfa2c720fa6fbae9ba7897b23b.png") -16px -32px no-repeat
+}
+
+.social-share-button-kaixin001 {
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	background: url("http://l.ruby-china.org/assets/sprites/social-share-button-ae547dcfa2c720fa6fbae9ba7897b23b.png") -32px -32px no-repeat
+}
+
+.social-share-button-qq {
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	background: url("http://l.ruby-china.org/assets/sprites/social-share-button-ae547dcfa2c720fa6fbae9ba7897b23b.png") -48px 0px no-repeat
+}
+
+.social-share-button-renren {
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	background: url("http://l.ruby-china.org/assets/sprites/social-share-button-ae547dcfa2c720fa6fbae9ba7897b23b.png") -48px -16px no-repeat
+}
+
+.social-share-button-tqq {
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	background: url("http://l.ruby-china.org/assets/sprites/social-share-button-ae547dcfa2c720fa6fbae9ba7897b23b.png") -48px -32px no-repeat
+}
+
+.social-share-button-twitter {
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	background: url("http://l.ruby-china.org/assets/sprites/social-share-button-ae547dcfa2c720fa6fbae9ba7897b23b.png") 0px -48px no-repeat
+}
+
+.social-share-button-weibo {
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	background: url("http://l.ruby-china.org/assets/sprites/social-share-button-ae547dcfa2c720fa6fbae9ba7897b23b.png") -16px -48px no-repeat
+}
+/*添加搜索*/
+.navbar-search {
+	position: relative;
+	float: right;
+	margin-top: 6px;
+	margin-bottom: 0
+}
+
+.navbar-search .search-query {
+	padding: 4px 9px;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 13px;
+	font-weight: normal;
+	line-height: 1;
+	color: #ffffff;
+	background-color: #626262;
+	border: 1px solid #151515;
+	-webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,0.1),0 1px 0px rgba(255,255,255,0.15);
+	-moz-box-shadow: inset 0 1px 2px rgba(0,0,0,0.1),0 1px 0px rgba(255,255,255,0.15);
+	box-shadow: inset 0 1px 2px rgba(0,0,0,0.1),0 1px 0px rgba(255,255,255,0.15);
+	-webkit-transition: none;
+	-moz-transition: none;
+	-ms-transition: none;
+	-o-transition: none;
+	transition: none
+}
+
+.navbar-search .search-query:-moz-placeholder {
+	color: #cccccc
+}
+
+.navbar-search .search-query::-webkit-input-placeholder {
+	color: #cccccc
+}
+
+.navbar-search .search-query:focus,.navbar-search .search-query.focused {
+	padding: 5px 10px;
+	color: #333333;
+	text-shadow: 0 1px 0 #ffffff;
+	background-color: #ffffff;
+	border: 0;
+	-webkit-box-shadow: 0 0 3px rgba(0,0,0,0.15);
+	-moz-box-shadow: 0 0 3px rgba(0,0,0,0.15);
+	box-shadow: 0 0 3px rgba(0,0,0,0.15);
+	outline: 0
+}
+/*去掉多说下面的版权*/
+#ds-thread #ds-reset .ds-powered-by {
+	display: none; 
+ }
+ /*返回顶部*/

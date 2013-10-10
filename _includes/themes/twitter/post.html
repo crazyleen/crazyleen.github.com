@@ -1,0 +1,93 @@
+{% if page.title %}
+<div class="page-header">
+  <h1>{{ page.title }} {% if page.tagline %} <small>{{ page.tagline }}</small> {% endif %}</h1>
+</div>
+{% endif %}
+<div class="row">
+  <div class="span8">
+    {{ content }}
+	<hr/>
+	<div class='social-share-button' data-title='{{ page.title }}'>
+	<b>分享到：</b>
+		<a href="#" class="social-share-button-weibo" data-site="weibo" onclick="return SocialShareButton.share(this);" rel="nofollow " title="分享到新浪微博"></a>
+		<a href="#" class="social-share-button-renren" data-site="renren" onclick="return SocialShareButton.share(this);" rel="nofollow " title="分享到人人"></a>
+		<a href="#" class="social-share-button-qq" data-site="qq" onclick="return SocialShareButton.share(this);" rel="nofollow " title="分享到QQ空间"></a>
+		<a href="#" class="social-share-button-douban" data-site="douban" onclick="return SocialShareButton.share(this);" rel="nofollow " title="分享到豆瓣"></a>
+		<a href="#" class="social-share-button-google_plus" data-site="google_plus" onclick="return SocialShareButton.share(this);" rel="nofollow " title="分享到Google+"></a>
+		<a href="#" class="social-share-button-twitter" data-site="twitter" onclick="return SocialShareButton.share(this);" rel="nofollow " title="分享到Twitter"></a>
+		<a href="#" class="social-share-button-facebook" data-site="facebook" onclick="return SocialShareButton.share(this);" rel="nofollow " title="分享到Facebook"></a>
+	</div>
+	<script type="text/javascript">
+        var lnks = document.getElementById("article").getElementsByTagName("a");
+        for(var i = 0; i < lnks.length; i++){
+            lnks[i].target = "_blank";
+            lnks[i].className = "external";            
+        }
+    </script>
+	<script type="text/javascript" id="wumiiRelatedItems"></script>
+	<script type="text/javascript">
+    var wumiiPermaLink = ""; //请用代码生成文章永久的链接
+    var wumiiTitle = ""; //请用代码生成文章标题
+    var wumiiTags = ""; //请用代码生成文章标签，以英文逗号分隔，如："标签1,标签2"
+    var wumiiSitePrefix = "http://liufeiyu.cn/";
+    var wumiiParams = "&num=4&mode=3&pf=JAVASCRIPT";
+	</script>
+	<script type="text/javascript" src="http://widget.wumii.com/ext/relatedItemsWidget"></script>
+	<a href="http://www.wumii.com/widget/relatedItems" style="border:0;">
+		<img src="http://static.wumii.cn/images/pixel.png" alt="无觅相关文章插件，快速提升流量" style="border:0;padding:0;margin:0;" />
+	</a>
+    <div class="pagination">
+      <ul>
+      {% if page.previous %}
+        <li class="prev"><a href="{{ BASE_PATH }}{{ page.previous.url }}" title="{{ page.previous.title }}">&larr; {{ page.previous.title }}</a></li>
+      {% else %}
+        <li class="prev disabled"><a>首&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;篇</a></li>
+      {% endif %}
+      {% if page.next %}
+        <li class="next"><a href="{{ BASE_PATH }}{{ page.next.url }}" title="{{ page.next.title }}">{{ page.next.title }} &rarr;</a></li>
+      {% else %}
+        <li class="next disabled"><a>末&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;篇</a>
+      {% endif %}
+      </ul>
+    </div>
+    <hr>
+    {% include JB/comments %}
+  </div>
+
+  <div class="span4">
+    <!--
+  <div>
+  <h4>我看过。。。</h4>
+  <script type="text/javascript" src="http://www.douban.com/service/badge/feiyuliu/?show=collection&amp;n=6&amp;columns=2&amp;picsize=medium" ></script>
+  </div>
+	-->
+    <h4>发布日期</h4>
+    <div class="date"><span>{{ page.date | date:"%Y-%m-%d" }}</span></div>
+
+  {% unless page.tags == empty %}
+    <h4>标签</h4>
+    <ul class="tag_box">
+    {% assign tags_list = page.tags %}
+    {% include JB/tags_list %}
+    </ul>
+  {% endunless %}  
+	<h4>最近发表</h4>
+    <ul id="recent_posts">
+    {% for rpost in site.posts limit: 6 %}
+      <li class="post">
+        <a href="{{ BASE_PATH }}{{ rpost.url }}">{{ rpost.title }}</a>
+      </li>
+    {% endfor %}
+    </ul>
+	{% unless site.categories == empty %}
+    <h4>分类</h4>
+    <ul class="tag_box">
+      {% assign categories_list = site.categories %}
+      {% include JB/categories_list %}
+    </ul>
+  {% endunless %}
+  </div>
+  
+</div>
+<script src="/assets/js/dw.js"></script>
+<script src="/assets/js/lfy.js"></script>

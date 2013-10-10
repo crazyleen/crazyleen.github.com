@@ -1,0 +1,3 @@
+Sitemap: http://crazyleen.github.io/
+User-agent: *
+Disallow:
