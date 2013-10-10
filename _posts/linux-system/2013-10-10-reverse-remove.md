@@ -2,7 +2,7 @@
 layout: post
 title: "在linux递归删除某个文件\文件夹(svn)的命令"
 description: "在linux递归删除某个文件\文件夹(svn)的命令"
-keywords: "find"
+keywords: "linux, find"
 category: Linux
 tags: [ubuntu]
 ---
