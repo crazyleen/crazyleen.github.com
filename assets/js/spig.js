@@ -3,7 +3,7 @@
 jQuery(document).ready(function ($) {
     $("#spig").mousedown(function (e) {
         if(e.which==3){
-        showMessage("秘密通道:<br /><a href=\"http://liufeiyu.cn/atom.xml\" title=\"订阅\">订阅</a>    <a href=\"http://liufeiyu.cn\" title=\"首页\">首页</a>",10000);
+        showMessage("<a href=\"http://blog.csdn.net/crazyleen\" title=\"csdn\">csdn</a>    <a href=\"http://crazyleen.github.io/\" title=\"github\">github</a>",10000);
 }
 });
 $("#spig").bind("contextmenu", function(e) {
@@ -24,7 +24,7 @@ jQuery(document).ready(function ($) {
     //$(".mumu").jrumble({rangeX: 2,rangeY: 2,rangeRot: 1});
     $(".mumu").mouseover(function () {
        $(".mumu").fadeTo("300", 0.3);
-       msgs = ["我隐身了，你看不到我", "我会隐身哦！嘿嘿！", "别动手动脚的，把手拿开！", "把手拿开我才出来！"];
+       msgs = ["Concentrate on reading, leave me alone", "Come on", "Concentrate", "OOOOOOO"];
        var i = Math.floor(Math.random() * msgs.length);
         showMessage(msgs[i]);
     });
@@ -37,15 +37,15 @@ jQuery(document).ready(function ($) {
 jQuery(document).ready(function ($) {
         var now = (new Date()).getHours();
         if (now > 0 && now <= 6) {
-            showMessage(' 你是夜猫子呀？还不睡觉，明天起的来么你？', 6000);
+            showMessage('Two wrongs don\'t make a right.', 6000);
         } else if (now > 6 && now <= 11) {
-            showMessage(' 早上好，早起的鸟儿有虫吃噢！早起的虫儿被鸟吃，你是鸟儿还是虫儿？嘻嘻！', 6000);
+            showMessage('The pen is mightier than the sword.', 6000);
         } else if (now > 11 && now <= 14) {
-            showMessage(' 中午了，吃饭了么？不要饿着了，饿死了谁来挺我呀！', 6000);
+            showMessage('When in Rome, do as the Romans.', 6000);
         } else if (now > 14 && now <= 18) {
-            showMessage(' 中午的时光真难熬！还好有你在！', 6000);
+            showMessage('The squeaky wheel gets the grease.', 6000);
         } else {
-            showMessage(' 快来逗我玩吧！', 6000);
+            showMessage('When the going gets tough, the tough get going.', 6000);
         }
     $(".spig").animate({
         top: $(".spig").offset().top + 300,
@@ -55,16 +55,12 @@ jQuery(document).ready(function ($) {
 	    queue: false,
 	    duration: 1000
 	});
-//    window.setTimeout(function () {
-//        showMessage("下面播报明日天气<iframe name=\"xidie\" src=\"http://t.xidie.com/city/shanghai.html\"frameborder=\“0\” scrolling=\"no\" height=\"15px\"  width=\"130px\" allowtransparency=\"true\" ></iframe>", 10000);
-//    },
-//	4000);
 });
 
 //鼠标在某些元素上方时
 jQuery(document).ready(function ($) {
     $('.nav a').click(function () {//标题被点击时
-        showMessage('正在用吃奶的劲加载《<span style="color:#0099cc;">' + $(this).text() + '</span>》请稍候');
+        showMessage('loading《<span style="color:#0099cc;">' + $(this).text() + '</span>》wait plz.');
     });
 });
 
@@ -73,7 +69,7 @@ jQuery(document).ready(function ($) {
 jQuery(document).ready(function ($) {
 
     window.setInterval(function () {
-        msgs = ["播报明日天气<iframe name=\"xidie\" src=\"http://t.xidie.com/skin/2010-0601.html\"frameborder=\“0\” scrolling=\"no\" height=\"15px\"  width=\"130px\" allowtransparency=\"true\" ></iframe>", "陪我聊天吧！", "好无聊哦，你都不陪我玩！", "…~O ■☆★◇℃¤§@……!", "^%#&*!@*(&#)(!)(", "我可爱吧！嘻嘻!~^_^!~~","谁淫荡呀?~谁淫荡?，你淫荡呀!~~你淫荡！~~","从前有座山，山上有座庙，庙里有个老和尚给小和尚讲故事，讲：“从前有座……”"];
+        msgs = ["No man is an island.", "Fortune favors the bold.", "People who live in glass houses should not throw stones.", "Hope for the best, but prepare for the worst.", "Better late than never.","Birds of a feather flock together.","Keep your friends close and your enemies closer."];
         var i = Math.floor(Math.random() * msgs.length);
         showMessage(msgs[i], 10000);
     }, 35000);
@@ -82,7 +78,7 @@ jQuery(document).ready(function ($) {
 //无聊动动
 jQuery(document).ready(function ($) {
     window.setInterval(function () {
-        msgs = ["播报明日天气<iframe name=\"xidie\" src=\"http://t.xidie.com/skin/2010-0601.html\"frameborder=\“0\” scrolling=\"no\" height=\"15px\"  width=\"130px\" allowtransparency=\"true\" ></iframe>", "乾坤大挪移！", "我飘过来了！~", "我飘过去了", "我得意地飘！~飘！~"];
+        msgs = ["A picture is worth a thousand words.", "There's no such thing as a free lunch.", "There's no place like home.", "Discretion is the greater part of valor.", "The early bird catches the worm.", "Never look a gift horse in the mouth.", "You can't make an omelet without breaking a few eggs."];
         var i = Math.floor(Math.random() * msgs.length);
         s = [0.1, 0.2, 0.3, 0.4, 0.5, 0.6,0.7,0.75,-0.1, -0.2, -0.3, -0.4, -0.5, -0.6,-0.7,-0.75];
         var i1 = Math.floor(Math.random() * s.length);
@@ -101,7 +97,7 @@ jQuery(document).ready(function ($) {
 //评论资料
 jQuery(document).ready(function ($) {
     $("#hot_locations").click(function () {
-        showMessage("访问一下友情链接吧！");
+        showMessage("visit other links");
         $(".spig").animate({
             top: $("#author").offset().top - 70,
             left: $("#author").offset().left - 170
@@ -135,11 +131,11 @@ jQuery(document).ready(function ($) {
         if (!ismove) {
             stat_click++;
             if (stat_click > 4) {
-                msgs = ["你有完没完呀？", "你已经摸我" + stat_click + "次了", "非礼呀！救命！OH，My ladygaga"];
+                msgs = ["You can't always get what you want."];
                 var i = Math.floor(Math.random() * msgs.length);
                 //showMessage(msgs[i]);
             } else {
-                msgs = ["筋斗云！~我飞！", "我跑呀跑呀跑！~~", "别摸我，大男人，有什么好摸的！", "惹不起你，我还躲不起你么？", "不要摸我了，我会告诉老婆来打你的！", "干嘛动我呀！小心我咬你！"];
+                msgs = ["Cleanliness is next to godliness.", "A watched pot never boils.", "Beggars can't be choosers.", "Actions speak louder than words.", "If it ain't broke, don't fix it.", "Practice makes perfect."];
                 var i = Math.floor(Math.random() * msgs.length);
                 //showMessage(msgs[i]);
             }
